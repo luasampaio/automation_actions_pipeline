@@ -20,6 +20,7 @@ jobs:
           echo test, and deploy your project.
 
   deploy-dev:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
